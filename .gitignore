@@ -1,25 +1,12 @@
-# CakePHP 3
+# Ignore sensitive M-PESA and Database credentials
+.env
+config.php
+credentials.json
+secrets.php
 
-/vendor/*
-/config/app.php
+# Ignore folder for external libraries
+/vendor/
+node_modules/
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
-
-/logs/*
-!/logs/empty
-
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Ignore log files (where M-PESA errors might show)
+*.log
